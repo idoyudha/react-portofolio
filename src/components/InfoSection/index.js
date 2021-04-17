@@ -1,22 +1,24 @@
 import React from 'react'
 import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Heading, Subtitle, Column2, ImgWrap, Img  } from './InfoElements'
 
-const InfoSection = () => {
+
+const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, img, alt }) => {
+    console.log(img)
     return (
         <>
-            <InfoContainer>
+            <InfoContainer lightBg={lightBg} id={id}>
                 <InfoWrapper>
-                    <InfoRow>
+                    <InfoRow imgStart={imgStart}>
                         <Column1>
                         <TextWrapper>
-                            <TopLine>TopLine</TopLine>
-                            <Heading>Heading</Heading>
-                            <Subtitle>Heading</Subtitle>
+                            <TopLine>{topLine}</TopLine>
+                            <Heading lightText={lightText}>{headline}</Heading>
+                            <Subtitle darkText={darkText}>{description}</Subtitle>
                         </TextWrapper>
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img />
+                                <Img src={img} alt={alt}/>
                             </ImgWrap>
                         </Column2>
                     </InfoRow>

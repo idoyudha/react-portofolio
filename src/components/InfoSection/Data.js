@@ -1,3 +1,5 @@
+import developer from '../../images/developer.svg'
+
 export const homeObjOne = {
     id: 'about',
     lightBg: false,
@@ -7,5 +9,9 @@ export const homeObjOne = {
     headline: 'Project',
     description: 'Lorem ipsum blablabla',
     imgStart: false,
-    img: require('../../images/svg-1.svg'),
+    img: developer,
+    alt: 'Developer',
+    dark: true,
+    primary: true,
+    darkText: false
 }
