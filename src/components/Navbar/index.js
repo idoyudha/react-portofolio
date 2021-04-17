@@ -4,15 +4,14 @@ import { FaGithubSquare } from 'react-icons/fa'
 import { Nav, NavLogo, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLinks, GitLogo  } from './NavbarElements'
 
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
                     <NavLogo to="/">ido</NavLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick={toggle}>
                         <FaBars />
-                        <FaGithubSquare />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>

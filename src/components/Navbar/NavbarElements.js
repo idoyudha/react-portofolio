@@ -5,7 +5,7 @@ import { Link as LinkR } from 'react-router-dom'
 export const Nav = styled.nav`
     background: #000;
     height: 80px;
-    /* margin-top: -80px; */
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,6 +104,10 @@ export const GitLogo = styled.div`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `;
 
 // export const NavBtnLink = styled(LinkR)` 
