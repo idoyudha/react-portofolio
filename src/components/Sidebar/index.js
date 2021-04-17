@@ -16,10 +16,10 @@ const Sidebar = ( {isOpen, toggle} ) => {
                     <SidebarLink to="projects" onClick={toggle}>
                         Projects
                     </SidebarLink>
-                    <SidebarLink to="resume" onClick={toggle}>
-                        Resume
+                    <SidebarLink to="contact" onClick={toggle}>
+                        Contact
                     </SidebarLink>
-                    <SidebarLink to="resume" onClick={toggle}>
+                    <SidebarLink to="about" onClick={toggle}>
                         <FaGithubSquare />
                     </SidebarLink>
                 </SidebarMenu>

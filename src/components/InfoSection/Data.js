@@ -1,17 +1,51 @@
+import about from '../../images/about.svg'
 import developer from '../../images/developer.svg'
+import email from '../../images/email.svg'
 
 export const homeObjOne = {
     id: 'about',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: 'About me',
-    headline: 'Project',
+    headline: 'Skills',
     description: 'Lorem ipsum blablabla',
-    imgStart: false,
+    imgStart: true,
+    img: about,
+    alt: 'about',
+    dark: false,
+    primary: false,
+    darkText: true
+}
+
+export const homeObjTwo = {
+    id: 'projects',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Project',
+    headline: 'List Project',
+    description: 'Lorem ipsum blablabla',
+    imgStart: true,
     img: developer,
     alt: 'Developer',
-    dark: true,
-    primary: true,
-    darkText: false
+    dark: false,
+    primary: false,
+    darkText: true
+}
+
+export const homeObjThree = {
+    id: 'contact',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Contact',
+    headline: 'Send mail',
+    description: 'Lorem ipsum blablabla',
+    imgStart: true,
+    img: email,
+    alt: 'Email',
+    dark: false,
+    primary: false,
+    darkText: true
 }
