@@ -21,6 +21,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 80px;
     z-index: 1;
     width: 100%;
@@ -46,8 +47,6 @@ export const MobileIcon = styled.div`
     @media screen and (max-width: 768px) {
         display: flex;
         align-items: center;
-        /* top: 0;
-        right: 0; */
         transition: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
@@ -82,6 +81,7 @@ export const NavLinks = styled(LinkS)`
 
     &.active {
         border-bottom: 4px solid #6C63FF;
+        color: #6C63FF;
     }
 `;
 
@@ -110,22 +110,26 @@ export const GitLogo = styled.div`
     }
 `;
 
-// export const NavBtnLink = styled(LinkR)` 
-//     border-radius: 50px;
-//     background: #01bf71;
-//     white-space: nowrap;
-//     padding: 10px 22px;
-//     color: #010606;
-//     font-size: 16px;
-//     outline: none;
-//     border: none;
-//     cursor: pointer;
-//     transition: all 0.2s ease-in-out;
-//     text-decoration: none;
+export const NavButton = styled.a`
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: rgb(108,99,255, 0.5);
+    color: #fff;
+    height: 40px;
+    padding: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 
-//     &:hover {
-//         transition: all 0.2s ease-in-out;
-//         background: #fff;
-//         color: #010606;
-//     }
-// `
+    &:hover {
+        background-color: rgb(108,99,255, 0.9);
+        transform: matrix(1.04,0,0,1.04,0,1.04);
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`

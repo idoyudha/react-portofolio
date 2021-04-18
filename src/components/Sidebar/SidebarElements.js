@@ -59,7 +59,31 @@ export const SidebarLink = styled(LinkS)`
     cursor: pointer;
 
     &:hover {
-        color: #01bf71;
+        color: #6C63FF;
         transition: 0.2s ease-in-out;
+    }
+`
+
+export const NavButton = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+`
+
+export const GitBtn = styled.a`
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: rgb(108,99,255, 0.5);
+    color: #fff;
+    height: 40px;
+    padding: 15px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        background-color: rgb(108,99,255, 0.9);
     }
 `

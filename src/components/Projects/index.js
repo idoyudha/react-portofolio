@@ -1,29 +1,58 @@
 import React from 'react'
-import { ProjectsContainer, ProjectsH1, ProjectsWrapper, ProjectsCard, ProjectsIcon, ProjectsH2, ProjectsP } from './ProjectElements'
-import Icon1 from '../../images/project.svg'
-import Icon2 from '../../images/social.svg'
-import Icon3 from '../../images/resume.svg'
+import { ProjectsContainer, ProjectsH1, ProjectsWrapper, ProjectsCard, ProjectButton, ProjectsH2, ProjectsP } from './ProjectElements'
+import komodo from '../../images/komodo.jpg'
+import twitter from '../../images/twitter.png'
+import ebay from '../../images/ebay.jpg'
+import { FaGithub,  FaYoutube } from 'react-icons/fa';
+import { GrHeroku } from 'react-icons/gr';
 
 const Projects = () => {
     return (
         <>
             <ProjectsContainer id="projects">
-                <ProjectsH1>List of Project</ProjectsH1>
+                <ProjectsH1>Latest Project</ProjectsH1>
                 <ProjectsWrapper>
-                    <ProjectsCard>
-                        <ProjectsIcon src={Icon1} />
-                        <ProjectsH2>Lorem</ProjectsH2>
-                        <ProjectsP>impsum</ProjectsP>
+                    <ProjectsCard style={{ backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8) ), 
+                    url(${komodo})` }}>
+                        <ProjectsH2>Visit Komodo</ProjectsH2>
+                        <ProjectButton logo={'github'}
+                        href="https://github.com/idoyudha/visit_komodo">
+                            <FaGithub/>
+                            <ProjectsP>Github</ProjectsP>
+                        </ProjectButton>
+                        <ProjectButton logo={'heroku'}
+                        href="https://visit-komodo.herokuapp.com/">
+                            <GrHeroku/>
+                            <ProjectsP>Heroku</ProjectsP>
+                        </ProjectButton>
                     </ProjectsCard>
-                    <ProjectsCard>
-                        <ProjectsIcon src={Icon2} />
-                        <ProjectsH2>Lorem</ProjectsH2>
-                        <ProjectsP>impsum</ProjectsP>
+                    <ProjectsCard style={{ backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8) ), 
+                    url(${twitter})`}}>
+                        <ProjectsH2>Twitter Clone</ProjectsH2>
+                        <ProjectButton logo={'github'}
+                        href="https://github.com/idoyudha/network">
+                            <FaGithub/>
+                            <ProjectsP>Github</ProjectsP>
+                        </ProjectButton>
+                        <ProjectButton logo={'youtube'}
+                        href="https://youtu.be/boHoIKwlolQ">
+                            <FaYoutube/>
+                            <ProjectsP>YouTube</ProjectsP>
+                        </ProjectButton>
                     </ProjectsCard>
-                    <ProjectsCard>
-                        <ProjectsIcon src={Icon3} />
-                        <ProjectsH2>Lorem</ProjectsH2>
-                        <ProjectsP>impsum</ProjectsP>
+                    <ProjectsCard style={{ backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8) ), 
+                    url(${ebay})` }}>
+                        <ProjectsH2>Ebay Clone</ProjectsH2>
+                        <ProjectButton logo={'github'} 
+                        href="https://github.com/idoyudha/commerce">
+                            <FaGithub/>
+                            <ProjectsP>Github</ProjectsP>
+                        </ProjectButton>
+                        <ProjectButton logo={'youtube'}
+                        href="https://youtu.be/g7FCuTAowHo">
+                            <FaYoutube/>
+                            <ProjectsP>YouTube</ProjectsP>
+                        </ProjectButton>
                     </ProjectsCard>
                 </ProjectsWrapper>
             </ProjectsContainer> 

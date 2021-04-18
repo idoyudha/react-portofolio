@@ -1,34 +1,16 @@
 import styled from 'styled-components'
-
+import sand from '../../images/sand.jpg'
 
 export const HeroContainer = styled.div`
-    background: #0c0c0c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 30px;
-    height: 800px;
-    position: relative;
-    z-index: 1;
+    /* background: #101010; */
+    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.85) ), url(${sand});
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
 
-    /* :before {
-        content: '';
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(
-            180deg,
-            rgba(0,0,0,0.2) 0%,
-            rgba(0,0,0,0.6) 100%
-        ),
-        linear-gradient(
-            180deg,
-            rgba(0,0,0,0.2) 0%,
-            transparent 100%
-        );
-        z-index: 2;
-    } */
+    @media screen and (max-width: 768px) {
+        padding: 100px 0;
+    }
 `;
 
 export const HeroBg = styled.div`
@@ -42,27 +24,46 @@ export const HeroBg = styled.div`
     overflow: hidden;
 `;
 
-export const VideoBg = styled.video`
+export const HeroWrapper = styled.div`
+    display: grid;
+    z-index: 1;
+    height: 860px;
     width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 24px;
+    justify-content: center;
+`;
+
+export const HeroRow = styled.div`
+    display: grid;
+    grid-auto-columns: minmax(auto, 1fr);
+    align-items: center;
+    grid-template-areas: 'col2 col1';
+
+    @media screen and (max-width: 768px) {
+        grid-template-areas: 'col1' 'col2'
+    }
+`
+
+export const ImgContent = styled.div`
+    margin-bottom: 15px;
+    padding: 0 15px;
+    grid-area: col1;
 `;
 
 export const HeroContent = styled.div`
-    z-index: 3;
-    max-width: 1200px;
-    position: absolute;
-    padding: 8px 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    grid-area: col2;
 `;
+
 
 export const HeroH1 = styled.h1`
     color: #fff;
-    font-size: 48px;
-    text-align: center;
+    font-size: 60px;
+    text-align: left;
 
     @media screen and (max-width: 768px) {
         font-size: 40px;
@@ -73,11 +74,11 @@ export const HeroH1 = styled.h1`
     }
 `;
 
-export const HeroP = styled.p`
-    margin-top: 24px;
-    color: #fff;
-    font-size: 24px;
-    text-align: center;
+export const HeroP = styled.h6`
+    margin-top: 20px;
+    color: #6C63FF;
+    font-size: 40px;
+    text-align: left;
     max-width: 600px;
 
     @media screen and (max-width: 768px) {
@@ -87,4 +88,15 @@ export const HeroP = styled.p`
     @media screen and (max-width: 480px) {
         font-size: 18px;
     }
+`
+
+export const ImgWrap = styled.div`
+    max-width: 555px;
+    height: 100%;
+`
+
+export const Img = styled.img`
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding-right: 0;
 `

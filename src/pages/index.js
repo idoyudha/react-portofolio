@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
+import BodySection from '../components/BodySection'
 import HeroSection from '../components/HeroSection'
 import InfoSection from '../components/InfoSection'
-import { homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/Data'
+import { homeObjOne, homeObjThree } from '../components/InfoSection/Data'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
 import Sidebar from '../components/Sidebar'
@@ -14,14 +15,16 @@ const Home = () => {
     }
 
     return (
-        <>
-          <Sidebar isOpen={isOpen} toggle={toggle}/>
-          <Navbar toggle={toggle}/>  
-          <HeroSection/>
-          <InfoSection {...homeObjOne}/>
-          {/* <InfoSection {...homeObjTwo}/> */}
-          <Projects/>
-          <InfoSection {...homeObjThree}/>
+        <>  
+            {/* <BodySection> */}
+                <Sidebar isOpen={isOpen} toggle={toggle}/>
+                <Navbar toggle={toggle}/>
+                <HeroSection/>
+                <InfoSection {...homeObjOne}/>
+                {/* <InfoSection {...homeObjTwo}/> */}
+                <Projects/>
+                <InfoSection {...homeObjThree}/>
+            {/* </BodySection> */}
         </>
     )
 }

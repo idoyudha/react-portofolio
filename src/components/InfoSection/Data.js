@@ -5,8 +5,8 @@ import email from '../../images/email.svg'
 export const homeObjOne = {
     id: 'about',
     lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
+    lightText: true,
+    lightTextDesc: true,
     topLine: 'About me',
     headline: 'Skills',
     description: 'Lorem ipsum blablabla',
@@ -15,7 +15,7 @@ export const homeObjOne = {
     alt: 'about',
     dark: false,
     primary: false,
-    darkText: true
+    darkText: false
 }
 
 export const homeObjTwo = {

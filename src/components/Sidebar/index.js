@@ -1,6 +1,7 @@
 import React from 'react'
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, GitLogo } from './SidebarElements' 
-import { FaGithubSquare } from 'react-icons/fa'
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, NavButton, GitBtn } from './SidebarElements' 
+import { GoRepoForked } from 'react-icons/go';
+import { AiOutlineStar } from 'react-icons/ai';
 
 const Sidebar = ( {isOpen, toggle} ) => {
     return (
@@ -19,9 +20,12 @@ const Sidebar = ( {isOpen, toggle} ) => {
                     <SidebarLink to="contact" onClick={toggle}>
                         Contact
                     </SidebarLink>
-                    <SidebarLink to="about" onClick={toggle}>
-                        <FaGithubSquare />
-                    </SidebarLink>
+                    <NavButton>
+                        <GitBtn href="https://github.com/idoyudha/react-portofolio">
+                            <GoRepoForked />
+                            <AiOutlineStar />
+                        </GitBtn>
+                    </NavButton>
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>

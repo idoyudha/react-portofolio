@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import { FaBars } from 'react-icons/fa';
-import { FaGithubSquare } from 'react-icons/fa';
+import { GoRepoForked } from 'react-icons/go';
+import { AiOutlineStar } from 'react-icons/ai';
 import { animateScroll as scroll } from 'react-scroll'
-import { Nav, NavLogo, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLinks, GitLogo  } from './NavbarElements'
+import { Nav, NavLogo, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLinks, NavButton  } from './NavbarElements'
 
 
 const Navbar = ({ toggle }) => {
@@ -69,7 +70,10 @@ const Navbar = ({ toggle }) => {
                             </NavLinks>
                         </NavItem>
                     </NavMenu>
-                    <GitLogo to="github.com"><FaGithubSquare /></GitLogo>
+                    <NavButton href="https://github.com/idoyudha/react-portofolio">
+                        <GoRepoForked />
+                        <AiOutlineStar />
+                    </NavButton>
                     {/* <NavBtn>
                         <NavBtnLink><FaGithubSquare /></NavBtnLink>
                     </NavBtn> */}
