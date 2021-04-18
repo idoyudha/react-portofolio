@@ -15,12 +15,12 @@ import {
     Navitem,
     List
 } from './aboutElements'
-
 const AboutSection = ({...data}) => {
+    
     console.log(data)
     return (
         <>
-            <AboutContainer style={{background: '#191919'}} id={data.id}>
+            <AboutContainer id={data.id}>
                 <AboutWrapper>
                     <AboutRow>
                         <Column1>

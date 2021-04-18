@@ -1,7 +1,7 @@
 export const data = {
     id: 'about',
     heading: 'About Me',
-    description: "I’ve always sought out opportunities and challenges that are meaningful to me and others.",
+    description: "I’ve always sought out opportunities and challenges that are meaningful to the others.",
     hobbydesc: "Apart from coding, some other activities that I love to do!",
     hobbies: {
         hobby1: "Travelling",

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 
 export const AboutContainer = styled.div`
-    background: '#191919';
+    background: #191919;
     color: #fff;
 
     @media screen and (max-width: 768px) {
