@@ -9,11 +9,11 @@ export const ProjectsContainer = styled.div`
     align-items: center;
     background: #010606;
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1080px) {
         height: 1100px;
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 540px) {
         height: 1600px;
     }
 `;
@@ -27,11 +27,11 @@ export const ProjectsWrapper = styled.div`
     grid-gap: 25px;
     padding: 0 50px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1080px) {
         grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 540px) {
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
@@ -50,11 +50,11 @@ export const ProjectsCard = styled.div`
     align-items: center;
     border-radius: 10px;
     padding: 30px;
-    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 
     &:hover {
         transform: matrix(1.07,0,0,1.07,0,1.07);
-        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
         cursor: pointer;
     }
 `;
@@ -87,11 +87,11 @@ export const ProjectButton = styled.a`
     border: 1px solid #fff;
     transition: 0.3s;
     text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 
     &:hover {
         transform: matrix(1.04,0,0,1.04,0,1.04);
-        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
         background-color: ${({logo}) => (   logo === 'github' ? '#161B22' : 
                                             logo === 'heroku' ? '#9E7CC1' : 
                                             logo === 'youtube' ? '#FF0000' : 'black')};
