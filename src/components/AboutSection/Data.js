@@ -8,46 +8,59 @@ export const data = {
         hobby2: "Futsal",
         hobby3: "Hiking"
     },
-    education: {
-        campus: "Institut Teknologi Sepuluh Nopember",
-        subject: "Material Engineering",
-        organization: "Chairman and Founder of NACE ITS Student Chapter",
-        awards: "2nd Winner of Metallurgical and Material Competition 2017, held by University of Indonesia",
-        conference: "Presenter of International Corrosion Prevention Symposium for Research Scholars 2017, Kuala Lumpur, Malaysia",
-        scholarship: "Djarum Scholarship Awardee 2016"
-    },
-    courses: {
-        ed1: {
-            org: "Harvard University",
-            subject: "Computer Science for Web Programming Professional"
+    education: [
+        {
+            org: "Institut Teknologi Sepuluh Nopember",
+            subject: "Material Engineering",
+            year: "2014 - 2018",
+            organization: "Chairman and Founder of NACE ITS Student Chapter",
+            awards: "2nd Winner of Metallurgical and Material Competition 2017, held by University of Indonesia",
+            conference: "Presenter of International Corrosion Prevention Symposium for Research Scholars 2017, Kuala Lumpur, Malaysia",
+            scholarship: "Djarum Scholarship Awardee 2016"
         },
-        ed2: {
-            org: "University of California, Davis",
-            subject: "Data Wrangling, Analysis and AB Testing with SQL"
-        },
-        ed3: {
-            org: "Google",
-            subject: "GCP Big Data and Machine Learning Fundamentals"
-        },
-        ed4: {
-            org: "IBM",
-            subject: "Python for Data Science and AI"
-        },
-        ed5: {
-            org: "Stanford University",
-            subject: "Machine Learning"
+        {
+            org: "Purwadhika Digital Tecchnology School",
+            subject: "Full Stack Web Development",
+            year: "2021"
         }
-    },
-    experience: {
-        ex1: {
-            company: "Crown Beverage Cans Indonesia",
-            position: "Management Trainee",
+    ],
+    courses: [
+        {
+            subject: "Computer Science for Web Programming Professional",
+            org: "Harvard University",
+            year: "2021"
+        },
+        // {
+        //     subject: "Data Wrangling, Analysis and AB Testing with SQL",
+        //     org: "University of California, Davis",
+        //     year: "2020"
+        // },
+        // {
+        //     subject: "GCP Big Data and Machine Learning Fundamentals",
+        //     org: "Google",
+        //     year: "2020"
+        // },
+        // {
+        //     subject: "Python for Data Science and AI",
+        //     org: "IBM",
+        //     year: "2020"
+        // },
+        {
+            subject: "Machine Learning",
+            org: "Stanford University",
+            year: "2020"
+        }
+    ],
+    experience: [
+        {
+            subject: "Management Trainee",
+            org: "Crown Beverage Cans Indonesia",
             year: "2018 - 2020"
         },
-        ex2: {
-            company: "Medco EP Indonesia",
-            position: "Management Trainee",
+        {
+            subject: "Surface Facilities Field Engineer Intern",
+            org: "Medco EP Indonesia",
             year: "2017"
         }
-    }
+    ]
 }

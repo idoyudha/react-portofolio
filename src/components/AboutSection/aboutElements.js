@@ -76,17 +76,11 @@ export const Description = styled.p`
     line-height: 24px;
     color: #fff;
 `
-export const List = styled.div`
-    max-width: 440px;
-    margin-bottom: 35px;
-    font-size: 16px;
-    line-height: 24px;
-    color: #fff;
-`
 
 export const Navigation = styled.ul`
     display: flex;
     list-style: none;
+    margin-bottom: 15px;
 `
 
 export const Navitem = styled.li`
@@ -97,9 +91,37 @@ export const Navitem = styled.li`
     padding: 0 3rem 0 0;
     height: 100%;
     cursor: pointer;
+    transition: 0.2s;
+
+    &.hover {
+        border-bottom: 3px solid red;
+        color: red;
+    }
 
     &.active {
         border-bottom: 4px solid #6C63FF;
         color: #6C63FF;
     }
 `;
+
+export const List = styled.div`
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+`
+
+export const MeHead = styled.p`
+    font-weight: 600;
+`
+
+export const MeOrg = styled.p`
+    font-weight: 300;
+    margin-top: 3px;
+    font-style: italic;
+`
+
+export const Me = styled.p`
+    font-weight: 300;
+    margin-top: 3px;
+`

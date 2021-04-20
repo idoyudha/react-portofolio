@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import img from '../../images/about.svg'
 import { 
     AboutContainer, 
@@ -13,11 +13,46 @@ import {
     Description, 
     Navigation,
     Navitem,
-    List
+    List,
+    Me,
+    MeHead,
+    MeOrg
 } from './aboutElements'
 const AboutSection = ({...data}) => {
+    // Multi state
+    const [about, setData] = useState(data.education)
     
-    console.log(data)
+    const printData = () => {
+        if (about.length > 1) {
+            return about.map((item, index) => {
+                console.log(item, index)
+                return  <List>
+                            <MeHead>{item.subject}</MeHead>
+                            <MeOrg>{item.org}</MeOrg>
+                            <Me>{item.year}</Me>
+                        </List>
+            })
+        }
+        else {
+            return  <List>
+                        <MeHead>{about[0].subject}</MeHead>
+                        <MeOrg>{about[0].org}</MeOrg>
+                        <Me>{about[0].year}</Me>
+                    </List>
+        }
+    }
+    const replaceData = (param) => {
+        if (param === 'edu') {
+            setData(data.education)
+        }
+        else if (param === 'ex') {
+            setData(data.experience)
+        }
+        else {
+            setData(data.courses)
+        }
+    }
+
     return (
         <>
             <AboutContainer id={data.id}>
@@ -33,12 +68,11 @@ const AboutSection = ({...data}) => {
                                 <Heading>{data.heading}</Heading>
                                 <Description>{data.description}</Description>
                                 <Navigation>
-                                    <Navitem>Education</Navitem>
-                                    <Navitem>Experience</Navitem>
-                                    <Navitem>Courses</Navitem>
-                                    <Navitem>Hobbies</Navitem>
+                                    <Navitem onClick={() => replaceData('edu')}>Education</Navitem>
+                                    <Navitem onClick={() => replaceData('ex')}>Experience</Navitem>
+                                    <Navitem onClick={() => replaceData('courses')}>Courses</Navitem>
                                 </Navigation>
-                                <List></List>
+                                {printData()}
                             </TextWrapper>
                         </Column2>
                     </AboutRow>
