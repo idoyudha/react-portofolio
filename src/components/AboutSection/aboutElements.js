@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-
 export const AboutContainer = styled.div`
     background: #191919;
     color: #fff;
@@ -91,18 +90,36 @@ export const Navitem = styled.li`
     padding: 0 3rem 0 0;
     height: 100%;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
+    margin-right: 30px;
+    padding-bottom: 5px;
+    position: relative;
 
-    &.hover {
-        border-bottom: 3px solid red;
-        color: red;
+    &::after {
+        content: '';
+        width: 20%;
+        height: 3px;
+        background-color: #6C63FF;
+        position: absolute;
+        bottom: 0%;
+        transition: 0.2s ease-in-out;
+    }
+
+    &:hover::after {
+        left: 0%;
+        width: 70%;
     }
 
     &.active {
-        border-bottom: 4px solid #6C63FF;
         color: #6C63FF;
     }
+
+    &.active::after {
+        left: 0%;
+        width: 70%;
+    }
 `;
+
 
 export const List = styled.div`
     padding: 10px 0;

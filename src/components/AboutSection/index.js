@@ -21,7 +21,10 @@ import {
 const AboutSection = ({...data}) => {
     // Multi state
     const [about, setData] = useState(data.education)
-    
+    const [nav1, setNav1] = useState("active")
+    const [nav2, setNav2] = useState("")
+    const [nav3, setNav3] = useState("")
+
     const printData = () => {
         if (about.length > 1) {
             return about.map((item, index) => {
@@ -44,12 +47,21 @@ const AboutSection = ({...data}) => {
     const replaceData = (param) => {
         if (param === 'edu') {
             setData(data.education)
+            setNav1("active")
+            setNav2("")
+            setNav3("")
         }
         else if (param === 'ex') {
             setData(data.experience)
+            setNav1("")
+            setNav2("active")
+            setNav3("")
         }
         else {
             setData(data.courses)
+            setNav1("")
+            setNav2("")
+            setNav3("active")
         }
     }
 
@@ -68,9 +80,19 @@ const AboutSection = ({...data}) => {
                                 <Heading>{data.heading}</Heading>
                                 <Description>{data.description}</Description>
                                 <Navigation>
-                                    <Navitem onClick={() => replaceData('edu')}>Education</Navitem>
-                                    <Navitem onClick={() => replaceData('ex')}>Experience</Navitem>
-                                    <Navitem onClick={() => replaceData('courses')}>Courses</Navitem>
+                                    <Navitem className={nav1}   
+                                        onClick={() => replaceData('edu')}>
+                                        Education
+                                        
+                                    </Navitem>
+                                    <Navitem className={nav2}
+                                        onClick={() => replaceData('ex')}>
+                                        Experience
+                                    </Navitem>
+                                    <Navitem className={nav3}
+                                        onClick={() => replaceData('courses')}>
+                                        Courses
+                                    </Navitem>
                                 </Navigation>
                                 {printData()}
                             </TextWrapper>

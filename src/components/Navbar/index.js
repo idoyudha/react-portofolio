@@ -40,7 +40,6 @@ const Navbar = ({ toggle }) => {
                                 to="about"
                                 activeClass="active"
                                 spy="true"
-                    
                                 smooth={true} 
                                 duration={500} 
                                 offset={-80}>
