@@ -69,13 +69,10 @@ const Navbar = ({ toggle }) => {
                             </NavLinks>
                         </NavItem>
                     </NavMenu>
-                    <NavButton href="https://github.com/idoyudha/react-portofolio">
+                    <NavButton href="https://github.com/idoyudha/react-portofolio" target="_blank">
                         <GoRepoForked />
                         <AiOutlineStar />
                     </NavButton>
-                    {/* <NavBtn>
-                        <NavBtnLink><FaGithubSquare /></NavBtnLink>
-                    </NavBtn> */}
                 </NavbarContainer>
             </Nav>
         </>

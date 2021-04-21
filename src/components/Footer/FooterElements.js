@@ -45,9 +45,10 @@ export const MediaItem = styled.li`
     display: flex;
     align-items: center;
     font-size: 1.2rem;
-    border-radius: 5px;
-    background-color: rgb(108,99,255, 0.5);
-    color: #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid rgb(108,99,255, 0.5);
+    
     height: 40px;
     padding: 5px 10px;
     margin: 0 10px;
@@ -61,6 +62,12 @@ export const MediaItem = styled.li`
         transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     }
 `;
+
+export const MediaButton = styled.a`
+    display: flex;
+    align-items: center;
+    color: #fff;
+`
 
 export const Copyright = styled.p`
     text-align: right;
