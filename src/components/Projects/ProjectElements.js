@@ -38,7 +38,6 @@ export const ProjectsWrapper = styled.div`
 `
 
 export const ProjectsCard = styled.div`
-    /* background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url(${komodo}); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;

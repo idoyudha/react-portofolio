@@ -85,6 +85,12 @@ export const NavLinks = styled(LinkS)`
     }
 `;
 
+export const Code = styled.p`
+    color: #fff;
+    display: flex;
+    align-items: center;
+`
+
 export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
@@ -94,21 +100,6 @@ export const NavBtn = styled.nav`
     }
 `;
 
-export const GitLogo = styled.div`
-    color: white;
-    justify-self: flex-start;
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    margin-left: 24px;
-    font-weight: bold;
-    text-decoration: none;
-
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-`;
 
 export const NavButton = styled.a`
     display: flex;

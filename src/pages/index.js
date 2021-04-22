@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar'
 import { data } from '../components/AboutSection/Data'
 import AboutSection from '../components/AboutSection'
 import FooterSection from '../components/Footer'
+import CodeSection from '../components/CodeSection'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -21,6 +22,7 @@ const Home = () => {
                 <HeroSection/>
                 <AboutSection {...data}/>
                 <Projects/>
+                <CodeSection/>
                 <FooterSection/>
         </>
     )

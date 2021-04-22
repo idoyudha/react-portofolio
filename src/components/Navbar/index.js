@@ -2,8 +2,9 @@ import React, {useState, useEffect} from 'react';
 import { FaBars } from 'react-icons/fa';
 import { GoRepoForked } from 'react-icons/go';
 import { AiOutlineStar } from 'react-icons/ai';
+import { BsCode, BsCodeSlash} from 'react-icons/bs';
 import { animateScroll as scroll } from 'react-scroll'
-import { Nav, NavLogo, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLinks, NavButton  } from './NavbarElements'
+import { Nav, Code, NavLogo, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLinks, NavButton  } from './NavbarElements'
 
 
 const Navbar = ({ toggle }) => {
@@ -59,13 +60,13 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                         <NavItem>
                             <NavLinks 
-                                to="contact"
+                                to="code"
                                 activeClass="active"
                                 spy="true"
                                 smooth={true} 
                                 duration={500} 
                                 offset={-80}>
-                                Contact
+                                <Code><BsCode />Code<BsCodeSlash /></Code>
                             </NavLinks>
                         </NavItem>
                     </NavMenu>
