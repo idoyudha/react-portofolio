@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const CodeContainer = styled.div`
     height: 800px;
     display: flex;
+    color: #fff;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -19,7 +20,7 @@ export const CodeContainer = styled.div`
 
 export const CodeWrapper = styled.div`
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto;
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -64,6 +65,6 @@ export const Logo = styled.div`
 
 export const Heading = styled.h1`
     color: #fff;
-    font-size: 60px;
-    margin-bottom: 40px;
+    font-size: 40px;
+    margin-bottom: 10px;
 `
