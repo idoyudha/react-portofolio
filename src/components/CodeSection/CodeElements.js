@@ -23,43 +23,65 @@ export const CodeWrapper = styled.div`
     margin: 40px auto;
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, auto);
     grid-gap: 50px;
     padding: 0 50px;
+    align-items: center;
+    justify-content: center;
 
     @media screen and (max-width: 1080px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(5, auto);
     }
 
     @media screen and (max-width: 720px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, auto);
     }
 
     @media screen and (max-width: 640px) {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, auto);
         padding: 0 20px;
     }
 
     @media screen and (max-width: 480px) {
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: repeat(2, auto) ;
     }
 `
 
+
 export const Logo = styled.div`
     color: #fff;
-    display: flex;
+    background: black;
+    z-index: 1;
+    position: relative;
+    text-align: center;
     align-items: center;
+    justify-content: center;
+    display: flex;
     font-size: 50px;
     padding: 30px;
     border: 2px solid #6C63FF;
     border-radius: 10px;
-    transition: 0.5s;
     cursor: pointer;
-    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    transition: 0.3s ease-in-out;
 
     &:hover {
-        transform: matrix(1.04,0,0,1.04,0,1.04);
-        transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        background: ${({color}) => color};
+        color : ${({color}) => ( color === '#f0db4f' ? '#323330' : 
+                                color === '#61DBFB' ? 'black' : '#fff')};
+    }
+
+`
+
+export const Caption = styled.div`
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    top: -25px;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+
+    ${Logo}:hover & {
+        opacity: 1;
     }
 `
 

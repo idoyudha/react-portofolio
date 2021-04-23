@@ -3,7 +3,7 @@ import { AiFillHtml5 } from 'react-icons/ai';
 import { DiSqllite } from 'react-icons/di';
 import { SiJavascript, SiDjango, SiHeroku, SiGithub, SiGooglecloud, SiDocker, SiMysql } from 'react-icons/si';
 import { FaReact, FaCss3Alt, FaBootstrap, FaPython, FaNodeJs } from 'react-icons/fa';
-import { CodeContainer, CodeWrapper, Heading, Logo } from './CodeElements';
+import { Caption, CodeContainer, CodeWrapper, Heading, Logo } from './CodeElements';
 import GitHubCalendar from 'react-github-calendar';
 
 
@@ -11,11 +11,11 @@ const CodeSection = () => {
     const colourTheme = {
         background: "transparent",
         text: "#ffffff",
-        grade0: "#cfccff",
-        grade1: "#9e99ff",
-        grade2: "#6e66ff",
-        grade3: "#3d33ff",
-        grade4: "#0d00ff",
+        grade0: "hsla(243, 100%, 95%, 1)",
+        grade1: "hsla(243, 100%, 80%, 1)",
+        grade2: "hsla(243, 100%, 65%, 1)",
+        grade3: "hsla(243, 100%, 50%, 1)",
+        grade4: "hsla(243, 100%, 35%, 1)",
     };
 
     return (
@@ -23,17 +23,50 @@ const CodeSection = () => {
             <CodeContainer id="code">
                 <Heading>Skillset</Heading>
                 <CodeWrapper>
-                    <Logo><AiFillHtml5 /></Logo>
-                    <Logo><FaCss3Alt /></Logo>
-                    <Logo><FaBootstrap /></Logo>
-                    <Logo><SiJavascript /></Logo>
-                    <Logo><FaReact /></Logo>
-                    <Logo><FaPython /></Logo>
-                    <Logo><SiDjango /></Logo>
-                    <Logo><SiHeroku /></Logo>
-                    <Logo><SiGithub /></Logo>
-                    <Logo><SiGooglecloud /></Logo>
-                    <Logo><DiSqllite /></Logo>
+                    <Logo color={'#f06529'}>
+                        <AiFillHtml5 />
+                        <Caption>HTLM 5</Caption>
+                    </Logo>
+                    <Logo color={'#2965f1'}>
+                        <FaCss3Alt />
+                        <Caption>CSS3</Caption>
+                    </Logo>
+                    <Logo color={'#563d7c'}>
+                        <FaBootstrap />
+                        <Caption>Bootstrap</Caption>
+                    </Logo>
+                    <Logo color={'#f0db4f'}>
+                        <SiJavascript />
+                        <Caption>JavaScript</Caption>
+                    </Logo>
+                    <Logo color={'#61DBFB'}>
+                        <FaReact />
+                        <Caption>React</Caption>
+                    </Logo>
+                    <Logo color={'#4B8BBE'}>
+                        <FaPython />
+                        <Caption>Python</Caption>
+                    </Logo>
+                    <Logo color={'#092E20 '}>
+                        <SiDjango />
+                        <Caption>Django</Caption>
+                    </Logo>
+                    <Logo color={'#9E7CC1'}>
+                        <SiHeroku />
+                        <Caption>Heroku</Caption>
+                    </Logo>
+                    <Logo color={'#161B22'}>
+                        <SiGithub />
+                        <Caption>Github</Caption>
+                    </Logo>
+                    <Logo color={'#4285F4'}>
+                        <SiGooglecloud />
+                        <Caption>Google Cloud</Caption>
+                    </Logo>
+                    <Logo color={'#00758F'}>
+                        <DiSqllite />
+                        <Caption>SQL</Caption>
+                    </Logo>
                 </CodeWrapper>
                 <Heading>Days I Code</Heading>
                 <GitHubCalendar 
@@ -42,7 +75,7 @@ const CodeSection = () => {
                     blockMargin={5} 
                     fontSize={16} 
                     theme={colourTheme}
-                    color="hsla(243, 100%, 69%, 1)" 
+                    // color="hsla(243, 100%, 69%, 1)" 
                 />
             </CodeContainer>
         </>

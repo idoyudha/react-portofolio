@@ -16,12 +16,12 @@ const Projects = () => {
                     url(${komodo})` }}>
                         <ProjectsH2>Visit Komodo</ProjectsH2>
                         <ProjectButton logo={'github'}
-                        href="https://github.com/idoyudha/visit_komodo">
+                        href="https://github.com/idoyudha/visit_komodo" target="_blank">
                             <FaGithub/>
                             <ProjectsP>Github</ProjectsP>
                         </ProjectButton>
                         <ProjectButton logo={'heroku'}
-                        href="https://visit-komodo.herokuapp.com/">
+                        href="https://visit-komodo.herokuapp.com/" target="_blank">
                             <GrHeroku/>
                             <ProjectsP>Heroku</ProjectsP>
                         </ProjectButton>
@@ -30,12 +30,12 @@ const Projects = () => {
                     url(${twitter})`}}>
                         <ProjectsH2>Twitter Clone</ProjectsH2>
                         <ProjectButton logo={'github'}
-                        href="https://github.com/idoyudha/network">
+                        href="https://github.com/idoyudha/network" target="_blank">
                             <FaGithub/>
                             <ProjectsP>Github</ProjectsP>
                         </ProjectButton>
                         <ProjectButton logo={'youtube'}
-                        href="https://youtu.be/boHoIKwlolQ">
+                        href="https://youtu.be/boHoIKwlolQ" target="_blank">
                             <FaYoutube/>
                             <ProjectsP>YouTube</ProjectsP>
                         </ProjectButton>
@@ -44,12 +44,12 @@ const Projects = () => {
                     url(${ebay})` }}>
                         <ProjectsH2>Ebay Clone</ProjectsH2>
                         <ProjectButton logo={'github'} 
-                        href="https://github.com/idoyudha/commerce">
+                        href="https://github.com/idoyudha/commerce" target="_blank">
                             <FaGithub/>
                             <ProjectsP>Github</ProjectsP>
                         </ProjectButton>
                         <ProjectButton logo={'youtube'}
-                        href="https://youtu.be/g7FCuTAowHo">
+                        href="https://youtu.be/g7FCuTAowHo" target="_blank">
                             <FaYoutube/>
                             <ProjectsP>YouTube</ProjectsP>
                         </ProjectButton>

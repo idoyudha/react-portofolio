@@ -8,18 +8,30 @@ export const Footer = styled.footer`
     justify-content: center;
     align-items: center;
     z-index: 10;
+
+    @media screen and (max-width: 720px) {
+        height: 160px;
+    }
 `;
 
 export const FooterContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 30% auto 30%;
     align-items: center;
     height: 80px;
     z-index: 1;
     width: 100%;
     padding: 0 24px;
     max-width: 1300px;
+
+    @media screen and (max-width: 720px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        align-items: center;
+        height: 160px;
+    }
 `;
+
 
 export const Logo = styled.div`
     color: #6C63FF;
@@ -31,6 +43,11 @@ export const Logo = styled.div`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+
+    @media screen and (max-width: 720px) {
+        margin-left: 0;
+        justify-self: center;
+    }
 `;
 
 export const FooterMenu = styled.ul`
@@ -38,7 +55,7 @@ export const FooterMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: center;
 `;
 
 export const MediaItem = styled.li`
@@ -72,4 +89,8 @@ export const MediaButton = styled.a`
 export const Copyright = styled.p`
     text-align: right;
     color: #fff;
+
+    @media screen and (max-width: 720px) {
+        text-align: center;
+    }
 `

@@ -14,8 +14,8 @@ const FooterSection = () => {
         <>
             <Footer>
                 <FooterContainer>
+                    <Logo to="/" onClick={toggleHome} >ido</Logo>
                     <FooterMenu>
-                        <Logo to="/" onClick={toggleHome} >ido</Logo>
                         <MediaItem>
                             <MediaButton href="mailto:idowidya.yudhatama@gamil.com" target="_blank">
                                 <AiFillMail />

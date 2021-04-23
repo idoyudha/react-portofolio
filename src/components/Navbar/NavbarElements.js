@@ -116,7 +116,6 @@ export const NavButton = styled.a`
     &:hover {
         background-color: rgb(108,99,255, 0.9);
         transform: matrix(1.04,0,0,1.04,0,1.04);
-        transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     }
 
     @media screen and (max-width: 768px) {

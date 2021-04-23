@@ -83,7 +83,6 @@ const AboutSection = ({...data}) => {
                                     <Navitem className={nav1}   
                                         onClick={() => replaceData('edu')}>
                                         Education
-                                        
                                     </Navitem>
                                     <Navitem className={nav2}
                                         onClick={() => replaceData('ex')}>

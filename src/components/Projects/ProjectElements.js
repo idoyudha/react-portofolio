@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import komodo from '../../images/komodo.jpg'
 
 export const ProjectsContainer = styled.div`
     height: 800px;
@@ -53,7 +52,6 @@ export const ProjectsCard = styled.div`
 
     &:hover {
         transform: matrix(1.07,0,0,1.07,0,1.07);
-        transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
         cursor: pointer;
     }
 `;
@@ -90,7 +88,6 @@ export const ProjectButton = styled.a`
 
     &:hover {
         transform: matrix(1.04,0,0,1.04,0,1.04);
-        transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
         background-color: ${({logo}) => (   logo === 'github' ? '#161B22' : 
                                             logo === 'heroku' ? '#9E7CC1' : 
                                             logo === 'youtube' ? '#FF0000' : 'black')};
