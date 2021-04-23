@@ -66,7 +66,7 @@ export const Logo = styled.div`
 
     &:hover {
         background: ${({color}) => color};
-        color : ${({color}) => ( color === '#f0db4f' ? '#323330' : 
+        color : ${({color}) => ( color === '#f0db4f' ? 'black' : 
                                 color === '#61DBFB' ? 'black' : '#fff')};
     }
 
