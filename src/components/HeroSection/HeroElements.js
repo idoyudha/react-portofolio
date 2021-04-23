@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import sand from '../../images/sand.jpg'
 
 export const HeroContainer = styled.div`
-    /* background: #101010; */
     background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.85) ), url(${sand});
     background-repeat: no-repeat;
     background-size: cover;

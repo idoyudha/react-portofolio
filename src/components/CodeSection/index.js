@@ -75,7 +75,6 @@ const CodeSection = () => {
                     blockMargin={5} 
                     fontSize={16} 
                     theme={colourTheme}
-                    // color="hsla(243, 100%, 69%, 1)" 
                 />
             </CodeContainer>
         </>

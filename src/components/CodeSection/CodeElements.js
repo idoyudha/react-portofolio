@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const CodeContainer = styled.div`
-    height: 800px;
+    height: 900px;
     display: flex;
     color: #fff;
     flex-direction: column;

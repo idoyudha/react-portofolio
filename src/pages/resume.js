@@ -1,9 +1,13 @@
 import React from 'react'
+import { FcDownload } from 'react-icons/fc';
+import Navbar from '../components/Navbar';
+import NavReturn from '../components/NavbarReturn';
 
 const ResumePage = () => {
     return (
-        <>
-            <h1>All about me</h1>  
+        <>  
+            <NavReturn/>
+            <h1>All about me</h1>
         </>
     )
 }
