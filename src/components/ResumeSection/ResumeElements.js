@@ -11,7 +11,7 @@ export const CaptionHeading = styled.h1`
 `
 
 export const ResumeWrapper = styled.div`
-    width: 1300px;
+    max-width: 1300px;
     margin: 40px auto;
     padding: 0 24px;
 `

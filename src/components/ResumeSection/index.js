@@ -71,8 +71,6 @@ const ResumeSection = () => {
                 <ResumeWrapper>
                     <Heading>Education</Heading>
                     {printEducation()}
-                </ResumeWrapper>
-                <ResumeWrapper>
                     <Heading>Experience</Heading>
                     {printExperience()}
                 </ResumeWrapper>
