@@ -11,8 +11,8 @@ export const CaptionHeading = styled.h1`
 `
 
 export const ResumeWrapper = styled.div`
-    max-width: 1300px;
-    margin: 40px 0;
+    width: 1300px;
+    margin: 40px auto;
     padding: 0 24px;
 `
 
@@ -28,10 +28,20 @@ export const Big = styled.div`
     margin: 5px 0;
 `
 
+export const Organization = styled.p`
+    font-size: 20px;
+    margin: 5px 0 10px 0;
+`
+
 export const Detail = styled.p`
     font-size: 20px;
 `
 
+export const ContentWrapper = styled.div`
+    margin-bottom: 40px;
+`
+
 export const Content = styled.li`
-    font-size: 16px;
+    font-size: 17px;
+    margin: 3px 0;
 `

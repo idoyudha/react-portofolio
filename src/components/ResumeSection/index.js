@@ -1,44 +1,82 @@
 import React from 'react'
-import { 
-    ResumeContainer, 
+import {
+    ResumeContainer,
     CaptionHeading,
     ResumeWrapper,
     Heading,
     Big,
+    Organization,
+    ContentWrapper,
     Content,
     Detail
 } from './ResumeElements'
-import {data} from './Data'
+import { data } from './Data'
 
 const ResumeSection = () => {
 
-    const printData = () => {
-        console.log(data)
+    const printEducation = () => {
+        // console.log('education', data.education)
+        return data.education.map((item) => {
+            return  <>
+                        <Big>
+                            <Detail>{item.org}</Detail>
+                            <Detail>{item.year}</Detail>
+                        </Big>
+                        <Organization>{item.subject}</Organization>
+                        <ContentWrapper>
+                            {item.achievements.map((item => {
+                                return <Content>{item.title}</Content>
+                            }))}
+                        </ContentWrapper>
+                    </>
+        })
     }
+
+    const printExperience = () => {
+        return data.experience.map((item) => {
+            return  <>
+                        <Big>
+                            <Detail>{item.org}</Detail>
+                            <Detail>{item.year}</Detail>
+                        </Big>
+                        <Organization>{item.subject}</Organization>
+                        <ContentWrapper>
+                            {item.achievements.map((item => {
+                                return <Content>{item.title}</Content>
+                            }))}
+                        </ContentWrapper>
+                    </>
+        })
+    }
+
+    const printCourses = () => {
+        return data.courses.map((item) => {
+            return  <>
+                        <Organization>{item.subject}</Organization>
+                        <Big>
+                            <Detail>{item.org}</Detail>
+                            <Detail>{item.year}</Detail>
+                        </Big>
+                    </>
+        })
+    }
+
     return (
         <>
             <ResumeContainer>
                 <CaptionHeading>Resume</CaptionHeading>
                 <ResumeWrapper>
                     <Heading>Education</Heading>
-                    <Big>
-                        <Detail>Institut Teknologi Sepuluh Nopember</Detail>
-                        <Detail>2014-2018</Detail>
-                    </Big>
-                    <Content>Chairman</Content>
-                    <Content>2nd Winner</Content>
+                    {printEducation()}
                 </ResumeWrapper>
                 <ResumeWrapper>
-                    <Heading>Education</Heading>
-                    <Big>
-                        <Detail>Institut Teknologi Sepuluh Nopember</Detail>
-                        <Detail>2014-2018</Detail>
-                    </Big>
-                    <Content>Chairman</Content>
-                    <Content>2nd Winner</Content>
+                    <Heading>Experience</Heading>
+                    {printExperience()}
                 </ResumeWrapper>
-                <ResumeWrapper></ResumeWrapper>
-                {printData()}
+                {/* <ResumeWrapper>
+                    <Heading>Courses</Heading>
+                    {printCourses()}
+                </ResumeWrapper> */}
             </ResumeContainer>
         </>
     )
