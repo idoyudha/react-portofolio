@@ -30,21 +30,6 @@ export const data = {
             org: "Harvard University",
             year: "2021"
         },
-        // {
-        //     subject: "Data Wrangling, Analysis and AB Testing with SQL",
-        //     org: "University of California, Davis",
-        //     year: "2020"
-        // },
-        // {
-        //     subject: "GCP Big Data and Machine Learning Fundamentals",
-        //     org: "Google",
-        //     year: "2020"
-        // },
-        // {
-        //     subject: "Python for Data Science and AI",
-        //     org: "IBM",
-        //     year: "2020"
-        // },
         {
             subject: "Machine Learning",
             org: "Stanford University",

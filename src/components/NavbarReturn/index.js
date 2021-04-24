@@ -5,11 +5,14 @@ import { NavContainer, NavWrapper } from './ReturnElements';
 
 
 const NavReturn = () => {
+    const Arrow = {
+        color: 'white'
+    }
     return (
         <>
             <NavContainer>
                 <NavWrapper>
-                    <Link to="/" style={{color: 'white'}}><BiArrowBack /></Link>
+                    <Link to="/" style={Arrow}><BiArrowBack /></Link>
                 </NavWrapper>
             </NavContainer>  
         </>

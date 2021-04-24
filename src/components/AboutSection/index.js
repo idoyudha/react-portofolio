@@ -18,6 +18,7 @@ import {
     MeHead,
     MeOrg
 } from './aboutElements'
+
 const AboutSection = ({...data}) => {
     // Multi state
     const [about, setData] = useState(data.education)
