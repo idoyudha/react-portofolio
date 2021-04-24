@@ -45,3 +45,22 @@ export const Content = styled.li`
     font-size: 17px;
     margin: 3px 0;
 `
+
+export const Caption = styled.p`
+    margin: 0 auto;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 50px;
+`
+
+export const Button = styled.a`
+    text-decoration: none;
+    margin: 5px auto;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;

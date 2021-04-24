@@ -8,9 +8,12 @@ import {
     Organization,
     ContentWrapper,
     Content,
-    Detail
+    Detail,
+    Button,
+    Caption
 } from './ResumeElements'
 import { data } from './Data'
+import { FcDownload } from 'react-icons/fc';
 
 const ResumeSection = () => {
 
@@ -73,10 +76,10 @@ const ResumeSection = () => {
                     <Heading>Experience</Heading>
                     {printExperience()}
                 </ResumeWrapper>
-                {/* <ResumeWrapper>
-                    <Heading>Courses</Heading>
-                    {printCourses()}
-                </ResumeWrapper> */}
+                <Button href="https://drive.google.com/file/d/1cLeFYJ_M4K2Txz3MNPYqCBxNNJz5f_A1/view?usp=sharing" target="_blank">
+                    <FcDownload/>
+                </Button>
+                <Caption>Download Resume</Caption>
             </ResumeContainer>
         </>
     )

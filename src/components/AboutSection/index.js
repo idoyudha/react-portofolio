@@ -16,8 +16,11 @@ import {
     List,
     Me,
     MeHead,
-    MeOrg
+    MeOrg,
+    ResumePage
 } from './aboutElements'
+import { Link } from "react-router-dom";
+import { FcDocument, FcNext } from 'react-icons/fc';
 
 const AboutSection = ({...data}) => {
     // Multi state
@@ -93,6 +96,12 @@ const AboutSection = ({...data}) => {
                                         onClick={() => replaceData('courses')}>
                                         Courses
                                     </Navitem>
+                                    <Link to="/resume">
+                                        <ResumePage>
+                                            <FcDocument />
+                                            <FcNext />
+                                        </ResumePage>
+                                    </Link>
                                 </Navigation>
                                 {printData()}
                             </TextWrapper>

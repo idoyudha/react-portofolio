@@ -65,7 +65,6 @@ export const MediaItem = styled.li`
     border-radius: 50%;
     background-color: transparent;
     border: 2px solid rgb(108,99,255, 0.5);
-    
     height: 40px;
     padding: 5px 10px;
     margin: 0 10px;

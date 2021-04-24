@@ -80,6 +80,7 @@ export const Navigation = styled.ul`
     display: flex;
     list-style: none;
     margin-bottom: 15px;
+    align-items: center;
 `
 
 export const Navitem = styled.li`
@@ -120,6 +121,23 @@ export const Navitem = styled.li`
     }
 `;
 
+export const ResumePage = styled.div`
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: rgb(108,99,255, 0.5);
+    color: #fff;
+    height: 40px;
+    padding: 5px;
+    text-decoration: none;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(108,99,255, 0.9);
+    }
+`
 
 export const List = styled.div`
     padding: 10px 0;
