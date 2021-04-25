@@ -88,7 +88,7 @@ export const Navitem = styled.li`
     display: flex;
     text-align: left;
     text-decoration: none;
-    padding: 0 3rem 0 0;
+    padding: 0 0.5rem 0 0;
     height: 100%;
     cursor: pointer;
     transition: 0.2s ease-in-out;
