@@ -7,7 +7,7 @@ export const ResumeContainer = styled.div`
     flex-direction: column;
 `
 export const CaptionHeading = styled.h1`
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
 `
 
 export const ResumeWrapper = styled.div`

@@ -4,3 +4,14 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6C63FF;
+  border-radius: 5px;
+}
