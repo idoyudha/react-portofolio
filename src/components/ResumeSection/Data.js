@@ -35,7 +35,7 @@ export const data = {
             subject: "Computer Science for Web Programming",
             org: "Harvard University",
             year: "May 2021",
-            credential: "https://courses.edx.org/certificates/c16ba5b2c02f42a3b9a600b8ece2825e"
+            credential: "https://credentials.edx.org/credentials/f3c8823409bd4a31b21f98a471471f9f/"
         },
         {
             subject: "Building Resilient Streaming Analytics System on GCP",
