@@ -74,7 +74,7 @@ const ResumeSection = () => {
                     <Heading>Experience</Heading>
                     {printExperience()}
                 </ResumeWrapper>
-                <Button href="https://drive.google.com/file/d/1cLeFYJ_M4K2Txz3MNPYqCBxNNJz5f_A1/view?usp=sharing" target="_blank">
+                <Button href="/static/media/Resume-Ido.pdf" target="_blank">
                     <FcDownload/>
                 </Button>
                 <Caption>Download Resume</Caption>
