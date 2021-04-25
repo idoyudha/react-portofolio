@@ -48,15 +48,19 @@ export const Content = styled.li`
 `
 
 export const Caption = styled.p`
-    margin: 0 auto;
+    margin: 10px auto;
     font-size: 20px;
     color: #fff;
     margin-bottom: 50px;
+
+    &:hover {
+        text-decoration: underline;
+    }
 `
 
 export const Button = styled.a`
     text-decoration: none;
-    margin: 5px auto;
+    margin: 0 auto;
     cursor: pointer;
     font-size: 30px;
     border-radius: 50%;
@@ -74,6 +78,17 @@ export const Column = styled.div`
 
     @media screen and (max-width: 768px) {
         column-count: 1;
+    }
+`
+
+export const Credential = styled.a`
+    font-size: 17px;
+    margin: 3px 0;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        text-decoration: underline;
     }
 `
 

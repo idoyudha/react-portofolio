@@ -34,77 +34,92 @@ export const data = {
         {
             subject: "Computer Science for Web Programming",
             org: "Harvard University",
-            year: "May 2021"
+            year: "May 2021",
+            credential: "https://courses.edx.org/certificates/c16ba5b2c02f42a3b9a600b8ece2825e"
         },
         {
             subject: "Building Resilient Streaming Analytics System on GCP",
             org: "Google Cloud",
-            year: "December 2020"
+            year: "December 2020",
+            credential: "https://www.coursera.org/account/accomplishments/certificate/CG86ABCB9FP4"
         },
         {
             subject: "Data Science Math Skills",
             org: "Duke University",
-            year: "December 2020"
+            year: "December 2020",
+            credential: "https://www.coursera.org/account/accomplishments/certificate/NLJ7PV7ZSYQF"
         },
         {
             subject: "Data Wrangling, Analysis, and AB Testing with SQL",
             org: "University of California, Davis",
-            year: "December 2020"
+            year: "December 2020",
+            credential: "https://www.coursera.org/account/accomplishments/certificate/KEDZXPJ5GWKC"
         },
         {
             subject: "Building Batch Data Pipelines on GCP",
             org: "Google Cloud",
-            year: "November 2020"
+            year: "November 2020",
+            credential: "https://www.coursera.org/account/accomplishments/certificate/HFTXXMSK3Q6P"
         },
         {
             subject: "Modernizing Data Lakes and Data Warehouses with GCP",
             org: "Google Cloud",
-            year: "November 2020"
+            year: "November 2020",
+            credential: "https://www.coursera.org/account/accomplishments/certificate/BSSBYJCHFHRQ"
         },
         {
             subject: "Google Cloud Platform Big Data and Machine Learning Fundamentals",
             org: "Google Cloud",
-            year: "September 2020"
+            year: "September 2020",
+            credential: "https://www.coursera.org/account/accomplishments/certificate/9Y4WACCP5QN2"
         },
         {
             subject: "Databases and SQL for Data Science",
             org: "IBM",
-            year: "August 2020"
+            year: "August 2020",
+            credential: "https://www.coursera.org/account/accomplishments/certificate/UZCBUTTJJFW7"
         },
         {
             subject: "Python for Data Science and AI",
             org: "IBM",
-            year: "July 2020"
+            year: "July 2020",
+            credential: "https://www.coursera.org/account/accomplishments/certificate/8QZRD8GMTL6Z"
         },
         {
             subject: "Machine Learning",
             org: "Stanford University",
-            year: "June 2020"
+            year: "June 2020",
+            credential: "https://www.coursera.org/account/accomplishments/certificate/EVTU8XYDZJ6Q"
         },
         {
             subject: "Creative Thinking: Techniques and Tools for Success",
             org: "Imperial College London",
-            year: "March 2020"
+            year: "March 2020",
+            credential: "https://www.coursera.org/account/accomplishments/verify/2FZU9ACJDW26"
         },
         {
             subject: "Data Visualization with Advanced Excel",
             org: "PwC",
-            year: "February 2020"
+            year: "February 2020",
+            credential: "https://coursera.org/share/f457fecacc6449383d9f09bdc7d50d75"
         },
         {
             subject: "Initiating and Planning Projects",
             org: "University of Calofornia, Irvine",
-            year: "January 2020"
+            year: "January 2020",
+            credential: "https://www.coursera.org/account/accomplishments/verify/2D6D78YEV3EB"
         },
         {
             subject: "Problem Solving with Excel",
             org: "PwC",
-            year: "January 2020"
+            year: "January 2020",
+            credential: "https://www.coursera.org/account/accomplishments/verify/VZX4K8MBFX6U"
         },
         {
             subject: "Data-driven Decision Making",
             org: "PwC",
-            year: "December 2019"
+            year: "December 2019",
+            credential: "https://www.coursera.org/account/accomplishments/verify/25PWRW6CQDMK"
         }
     ],
     experience: [

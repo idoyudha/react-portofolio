@@ -12,6 +12,7 @@ import {
     Button,
     Caption,
     Column,
+    Credential,
     Univ
 } from './ResumeElements'
 import { data } from './Data'
@@ -58,7 +59,9 @@ const ResumeSection = () => {
     const printCourses = () => {
         return data.courses.map((item) => {
             return  <>  
-                        <Content>{item.subject} - <Univ>{item.org}</Univ></Content>
+                        <Content>
+                            <Credential href={item.credential} target="_blank">{item.subject} - <Univ>{item.org}</Univ></Credential>
+                        </Content>
                     </>
         })
     }
@@ -79,8 +82,8 @@ const ResumeSection = () => {
                 </ResumeWrapper>
                 <Button href={resume} target="_blank">
                     <FcDownload/>
+                    <Caption>Download Resume</Caption>
                 </Button>
-                <Caption>Download Resume</Caption>
             </ResumeContainer>
         </>
     )
