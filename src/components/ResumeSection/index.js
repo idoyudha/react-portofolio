@@ -13,7 +13,8 @@ import {
     Caption
 } from './ResumeElements'
 import { data } from './Data'
-import { FcDownload } from 'react-icons/fc';
+import { FcDownload } from 'react-icons/fc'
+import resume from "../../doc/Resume-Ido.pdf"
 
 const ResumeSection = () => {
 
@@ -74,7 +75,7 @@ const ResumeSection = () => {
                     <Heading>Experience</Heading>
                     {printExperience()}
                 </ResumeWrapper>
-                <Button href="/static/media/Resume-Ido.pdf" target="_blank">
+                <Button href={resume} target="_blank">
                     <FcDownload/>
                 </Button>
                 <Caption>Download Resume</Caption>
