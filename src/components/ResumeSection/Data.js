@@ -32,7 +32,7 @@ export const data = {
     ],
     courses: [
         {
-            subject: "CS50's Introduction to Computer Science",
+            subject: "Computer Science for Web Programming",
             org: "Harvard University",
             year: "May 2021"
         },

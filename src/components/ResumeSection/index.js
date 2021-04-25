@@ -10,7 +10,9 @@ import {
     Content,
     Detail,
     Button,
-    Caption
+    Caption,
+    Column,
+    Univ
 } from './ResumeElements'
 import { data } from './Data'
 import { FcDownload } from 'react-icons/fc'
@@ -55,12 +57,8 @@ const ResumeSection = () => {
 
     const printCourses = () => {
         return data.courses.map((item) => {
-            return  <>
-                        <Organization>{item.subject}</Organization>
-                        <Big>
-                            <Detail>{item.org}</Detail>
-                            <Detail>{item.year}</Detail>
-                        </Big>
+            return  <>  
+                        <Content>{item.subject} - <Univ>{item.org}</Univ></Content>
                     </>
         })
     }
@@ -74,6 +72,10 @@ const ResumeSection = () => {
                     {printEducation()}
                     <Heading>Experience</Heading>
                     {printExperience()}
+                    <Heading>Courses and Certifications</Heading>
+                    <Column>
+                    {printCourses()}
+                    </Column>
                 </ResumeWrapper>
                 <Button href={resume} target="_blank">
                     <FcDownload/>

@@ -7,7 +7,7 @@ export const ResumeContainer = styled.div`
     flex-direction: column;
 `
 export const CaptionHeading = styled.h1`
-    margin: 50px auto;
+    margin: 30px auto;
 `
 
 export const ResumeWrapper = styled.div`
@@ -19,6 +19,7 @@ export const ResumeWrapper = styled.div`
 export const Heading = styled.h2`
     color: #6C63FF;
     border-bottom: 1px solid #6C63FF;
+    margin-top: 30px;
 `
 
 export const Big = styled.div`
@@ -38,7 +39,7 @@ export const Detail = styled.p`
 `
 
 export const ContentWrapper = styled.div`
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 `
 
 export const Content = styled.li`
@@ -64,3 +65,18 @@ export const Button = styled.a`
     flex-direction: column;
     align-items: center;
 `;
+
+export const Column = styled.div`
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 1px solid #6C63FF;
+    margin-top: 10px;
+
+    @media screen and (max-width: 768px) {
+        column-count: 1;
+    }
+`
+
+export const Univ = styled.span`
+    font-style: italic;
+`
