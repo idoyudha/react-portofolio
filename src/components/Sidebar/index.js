@@ -17,8 +17,8 @@ const Sidebar = ( {isOpen, toggle} ) => {
                     <SidebarLink to="projects" onClick={toggle}>
                         Projects
                     </SidebarLink>
-                    <SidebarLink to="contact" onClick={toggle}>
-                        Contact
+                    <SidebarLink to="code" onClick={toggle}>
+                        Code
                     </SidebarLink>
                     <NavButton>
                         <GitBtn href="https://github.com/idoyudha/react-portofolio">
