@@ -14,6 +14,10 @@ export const ResumeWrapper = styled.div`
     max-width: 1300px;
     margin: 40px auto;
     padding: 0 24px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
 `
 
 export const Heading = styled.h2`
@@ -75,6 +79,7 @@ export const Column = styled.div`
     column-gap: 40px;
     column-rule: 1px solid #6C63FF;
     margin-top: 10px;
+    margin-bottom: 20px;
 
     @media screen and (max-width: 768px) {
         column-count: 1;
