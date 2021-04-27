@@ -25,7 +25,7 @@ export const data = {
             year: "ongoing",
             achievements: [
                 {
-                    title: "Coding Chanllenge Winner"
+                    title: "Coding Challenge Winner"
                 }
             ]
         }
