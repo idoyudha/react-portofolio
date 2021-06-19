@@ -1,13 +1,11 @@
 import './App.css';
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Home from './pages/home';
 import ResumePage from './pages/resume';
-import FooterSection from './components/Footer';
+// import FooterSection from './components/Footer';
 import NotFound from './pages/notFound';
 import ScrollToTop from './components/ScrollToTop';
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import { AiFillHtml5 } from 'react-icons/ai';
-import { DiSqllite } from 'react-icons/di';
-import { SiJavascript, SiDjango, SiHeroku, SiGithub, SiGooglecloud, SiDocker, SiMysql } from 'react-icons/si';
+import { SiJavascript, SiDjango, SiHeroku, SiGithub, SiGooglecloud, SiMysql } from 'react-icons/si';
 import { FaReact, FaCss3Alt, FaBootstrap, FaPython, FaNodeJs } from 'react-icons/fa';
 import { Caption, CodeContainer, CodeWrapper, Heading, Logo } from './CodeElements';
 import GitHubCalendar from 'react-github-calendar';
@@ -23,6 +22,14 @@ const CodeSection = () => {
             <CodeContainer id="code">
                 <Heading>Skillset</Heading>
                 <CodeWrapper>
+                    <Logo color={'#4B8BBE'}>
+                        <FaPython />
+                        <Caption>Python</Caption>
+                    </Logo>
+                    <Logo color={'#f0db4f'}>
+                        <SiJavascript />
+                        <Caption>JavaScript</Caption>
+                    </Logo>
                     <Logo color={'#f06529'}>
                         <AiFillHtml5 />
                         <Caption>HTLM 5</Caption>
@@ -35,17 +42,13 @@ const CodeSection = () => {
                         <FaBootstrap />
                         <Caption>Bootstrap</Caption>
                     </Logo>
-                    <Logo color={'#f0db4f'}>
-                        <SiJavascript />
-                        <Caption>JavaScript</Caption>
+                    <Logo color={'#3c873a'}>
+                        <FaNodeJs />
+                        <Caption>Node JS</Caption>
                     </Logo>
                     <Logo color={'#61DBFB'}>
                         <FaReact />
                         <Caption>React</Caption>
-                    </Logo>
-                    <Logo color={'#4B8BBE'}>
-                        <FaPython />
-                        <Caption>Python</Caption>
                     </Logo>
                     <Logo color={'#092E20 '}>
                         <SiDjango />
@@ -64,8 +67,8 @@ const CodeSection = () => {
                         <Caption>Google Cloud</Caption>
                     </Logo>
                     <Logo color={'#00758F'}>
-                        <DiSqllite />
-                        <Caption>SQL</Caption>
+                        <SiMysql />
+                        <Caption>My SQL</Caption>
                     </Logo>
                 </CodeWrapper>
                 <Heading>Days I Code</Heading>

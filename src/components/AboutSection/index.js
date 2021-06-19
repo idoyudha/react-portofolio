@@ -24,15 +24,22 @@ import { FcDocument, FcNext } from 'react-icons/fc';
 
 const AboutSection = ({...data}) => {
     // Multi state
-    const [about, setData] = useState(data.education)
-    const [nav1, setNav1] = useState("active")
-    const [nav2, setNav2] = useState("")
-    const [nav3, setNav3] = useState("")
+    const [values, setValues] = useState({
+        about: data.education,
+        nav1: "active",
+        nav2: "",
+        nav3: ""
+    })
+    // const [about, setData] = useState(data.education)
+    // const [nav1, setNav1] = useState("active")
+    // const [nav2, setNav2] = useState("")
+    // const [nav3, setNav3] = useState("")
 
     const printData = () => {
-        if (about.length > 1) {
-            return about.map((item, index) => {
-                console.log(item, index)
+        // console.log("values", values.about)
+        if (values.about.length > 1) {
+            return values.about.map((item, index) => {
+                // console.log(item, index)
                 return  <List>
                             <MeHead>{item.subject}</MeHead>
                             <MeOrg>{item.org}</MeOrg>
@@ -42,33 +49,38 @@ const AboutSection = ({...data}) => {
         }
         else {
             return  <List>
-                        <MeHead>{about[0].subject}</MeHead>
-                        <MeOrg>{about[0].org}</MeOrg>
-                        <Me>{about[0].year}</Me>
+                        <MeHead>{values.about[0].subject}</MeHead>
+                        <MeOrg>{values.about[0].org}</MeOrg>
+                        <Me>{values.about[0].year}</Me>
                     </List>
         }
     }
+
     const replaceData = (param) => {
         if (param === 'edu') {
-            setData(data.education)
-            setNav1("active")
-            setNav2("")
-            setNav3("")
+            setValues({...values, about: data.education, nav1: "active", nav2: "", nav3: ""})
+            // setData(data.education)
+            // setNav1("active")
+            // setNav2("")
+            // setNav3("")
         }
         else if (param === 'ex') {
-            setData(data.experience)
-            setNav1("")
-            setNav2("active")
-            setNav3("")
+            setValues({...values, about: data.education, nav1: "", nav2: "active", nav3: ""})
+            // setData(data.experience)
+            // setNav1("")
+            // setNav2("active")
+            // setNav3("")
         }
         else {
-            setData(data.courses)
-            setNav1("")
-            setNav2("")
-            setNav3("active")
+            setValues({...values, about: data.education, nav1: "", nav2: "", nav3: "active"})
+            // setData(data.courses)
+            // setNav1("")
+            // setNav2("")
+            // setNav3("active")
         }
     }
 
+    // console.log(values.nav1)
     return (
         <>
             <AboutContainer id={data.id}>
@@ -84,15 +96,15 @@ const AboutSection = ({...data}) => {
                                 <Heading>{data.heading}</Heading>
                                 <Description>{data.description}</Description>
                                 <Navigation>
-                                    <Navitem className={nav1}   
+                                    <Navitem className={values.nav1}   
                                         onClick={() => replaceData('edu')}>
                                         Education
                                     </Navitem>
-                                    <Navitem className={nav2}
+                                    <Navitem className={values.nav2}
                                         onClick={() => replaceData('ex')}>
                                         Experience
                                     </Navitem>
-                                    <Navitem className={nav3}
+                                    <Navitem className={values.nav3}
                                         onClick={() => replaceData('courses')}>
                                         Courses
                                     </Navitem>
