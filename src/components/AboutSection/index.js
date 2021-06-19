@@ -26,20 +26,15 @@ const AboutSection = ({...data}) => {
     // Multi state
     const [values, setValues] = useState({
         about: data.education,
-        nav1: "active",
-        nav2: "",
-        nav3: ""
+        nav1: null,
+        nav2: null,
+        nav3: null
     })
-    // const [about, setData] = useState(data.education)
-    // const [nav1, setNav1] = useState("active")
-    // const [nav2, setNav2] = useState("")
-    // const [nav3, setNav3] = useState("")
 
     const printData = () => {
         // console.log("values", values.about)
         if (values.about.length > 1) {
             return values.about.map((item, index) => {
-                // console.log(item, index)
                 return  <List>
                             <MeHead>{item.subject}</MeHead>
                             <MeOrg>{item.org}</MeOrg>
@@ -58,29 +53,16 @@ const AboutSection = ({...data}) => {
 
     const replaceData = (param) => {
         if (param === 'edu') {
-            setValues({...values, about: data.education, nav1: "active", nav2: "", nav3: ""})
-            // setData(data.education)
-            // setNav1("active")
-            // setNav2("")
-            // setNav3("")
+            setValues({...values, about: data.education, nav1: "active", nav2: null, nav3: null})
         }
         else if (param === 'ex') {
-            setValues({...values, about: data.education, nav1: "", nav2: "active", nav3: ""})
-            // setData(data.experience)
-            // setNav1("")
-            // setNav2("active")
-            // setNav3("")
+            setValues({...values, about: data.experience, nav1: null, nav2: "active", nav3: null})
         }
         else {
-            setValues({...values, about: data.education, nav1: "", nav2: "", nav3: "active"})
-            // setData(data.courses)
-            // setNav1("")
-            // setNav2("")
-            // setNav3("active")
+            setValues({...values, about: data.courses, nav1: null, nav2: null, nav3: "active"})
         }
     }
 
-    // console.log(values.nav1)
     return (
         <>
             <AboutContainer id={data.id}>
