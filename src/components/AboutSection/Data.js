@@ -38,14 +38,14 @@ export const data = {
     ],
     experience: [
         {
+            subject: "Software Engineer",
+            org: "Mbiz",
+            year: "2021 - now"
+        },
+        {
             subject: "Management Trainee",
             org: "Crown Beverage Cans Indonesia",
             year: "2018 - 2020"
-        },
-        {
-            subject: "Surface Facilities Field Engineer Intern",
-            org: "Medco EP Indonesia",
-            year: "2017"
         }
     ]
 }

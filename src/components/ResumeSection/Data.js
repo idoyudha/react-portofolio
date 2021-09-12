@@ -22,7 +22,7 @@ export const data = {
         {
             org: "Purwadhika Digital Tecchnology School",
             subject: "Full Stack Web Development",
-            year: "ongoing",
+            year: "2021",
             achievements: [
                 {
                     title: "Coding Challenge Winner"
@@ -123,6 +123,16 @@ export const data = {
         }
     ],
     experience: [
+        {
+            subject: "Software Engineer",
+            org: "Mbiz",
+            year: "2021",
+            achievements: [
+                {
+                    title: "Design, develop, test, deploy, maintain and improve the software."
+                }
+            ]
+        },
         {
             subject: "Management Trainee",
             org: "Crown Beverage Cans Indonesia",
