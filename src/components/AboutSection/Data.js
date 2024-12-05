@@ -17,11 +17,6 @@ export const data = {
             awards: "2nd Winner of Metallurgical and Material Competition 2017, held by University of Indonesia",
             conference: "Presenter of International Corrosion Prevention Symposium for Research Scholars 2017, Kuala Lumpur, Malaysia",
             scholarship: "Djarum Scholarship Awardee 2016"
-        },
-        {
-            org: "Purwadhika Digital Tecchnology School",
-            subject: "Full Stack Web Development",
-            year: "2021"
         }
     ],
     courses: [
@@ -39,12 +34,17 @@ export const data = {
     experience: [
         {
             subject: "Software Engineer",
-            org: "Mbiz",
-            year: "2021 - now"
+            org: "Aspire - The Financial OS For Modern Businesses",
+            year: "2024 - now"
+        },
+        {
+            subject: "Software Engineer",
+            org: "Mbiz - B2B Marketplace",
+            year: "2021 - 2024"
         },
         {
             subject: "Management Trainee",
-            org: "Crown Beverage Cans Indonesia",
+            org: "Crown Holdings- Brand Building Packaging",
             year: "2018 - 2020"
         }
     ]

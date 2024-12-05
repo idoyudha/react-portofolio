@@ -18,16 +18,6 @@ export const data = {
                     title: "Djarum Scholarship Awardee 2016"
                 }
             ]
-        },
-        {
-            org: "Purwadhika Digital Tecchnology School",
-            subject: "Full Stack Web Development",
-            year: "2021",
-            achievements: [
-                {
-                    title: "Coding Challenge Winner"
-                }
-            ]
         }
     ],
     courses: [
@@ -125,17 +115,42 @@ export const data = {
     experience: [
         {
             subject: "Software Engineer",
-            org: "Mbiz",
+            org: "Aspire - The Financial OS For Modern Businesses",
+            year: "2024 - now",
+            achievements: [
+                {
+                    title: "Software Development: Build and develop software, particularly during the construction phase, by coding in the specified programming language."
+                },
+                {
+                    title: "Requirement Implementation: Translate requirements and business process designs into computer programs using algorithms, logic, and appropriate programming languages."
+                },
+                {
+                    title: "Software Testing: Conduct necessary testing to ensure software functionality and reliability."
+                },
+                {
+                    title: "Continuous Improvement: Stay updated with emerging technologies and industry trends, and apply this knowledge to enhance the software development process."
+                }
+            ]
+        },
+        {
+            subject: "Software Engineer",
+            org: "Mbiz - B2B Marketplace",
             year: "2021",
             achievements: [
                 {
-                    title: "Design, develop, test, deploy, maintain and improve the software."
+                    title: "Enhanced Page Performace: Reduced detail page response time by 500% (from 3 seconds to 600 milliseconds) by implementing efficient algorithms, concurrent programming, and database indexing."
+                },
+                {
+                    title: "Optimized Report Generation: Increased report file generation speed by 30x by refactoring code and optimizing SQL queries."
+                },
+                {
+                    title: "Streamlined Continuous Integration: Successfully implemented continuous integration in the code repositories (Bitbucket and GitHub) by writing a YML file that automatically runs builds and unit tests upon a Pull Request. Significantly reduced deployment error."
                 }
             ]
         },
         {
             subject: "Management Trainee",
-            org: "Crown Beverage Cans Indonesia",
+            org: "Crown Holdings- Brand Building Packaging",
             year: "2018 - 2020",
             achievements: [
                 {
