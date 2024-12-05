@@ -44,7 +44,7 @@ export const data = {
         },
         {
             subject: "Management Trainee",
-            org: "Crown Holdings- Brand Building Packaging",
+            org: "Crown Holdings - Brand Building Packaging",
             year: "2018 - 2020"
         }
     ]
